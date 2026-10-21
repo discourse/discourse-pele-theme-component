@@ -24,7 +24,8 @@
     "lint:prettier:fix": "pnpm prettier '{javascripts,desktop,mobile,common,scss,stylesheets}/**/*.scss' '{javascripts,test}/**/*.{js,gjs,ts,gts,mts,cts}' -w --no-error-on-unmatched-pattern",
     "lint:types": "tsc -b --runExternalCode",
     "lttf:ignore": "lint-to-the-future ignore",
-    "update-skeleton": "pnpx @discourse/update-skeleton@latest"
+    "update-skeleton": "pnpx @discourse/update-skeleton@latest",
+    "update:pele": "node scripts/update-pele.mjs"
   },
   "engines": {
     "node": ">= 22",
