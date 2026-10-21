@@ -1,1 +1,88 @@
-// Theme's SCSS
+.pele-diagram {
+  --pele-bg: var(--secondary);
+  --pele-fg: var(--primary);
+  --pele-muted: var(--primary-medium);
+  --pele-line: var(--primary-high);
+  --pele-surface: var(--primary-low);
+  --pele-surface-alt: var(--primary-very-low);
+  --pele-border: var(--primary-low-mid);
+  --pele-accent: var(--tertiary);
+  --pele-critical: var(--danger);
+  --pele-error: var(--danger);
+  --pele-font-mono: var(--d-font-family--monospace);
+  --pele-radius: var(--d-border-radius);
+  --pele-series-1: var(--tertiary);
+  --pele-series-2: var(--quaternary);
+  --pele-series-3: var(--success);
+  --pele-series-4: var(--danger);
+  --pele-series-5: var(--love);
+  --pele-series-6: var(--primary-high);
+  --pele-series-7: var(--tertiary-hover);
+  --pele-series-8: var(--primary-medium);
+
+  &__error {
+    margin: 0;
+  }
+}
+
+.pele-wrapper {
+  position: relative;
+  margin-block: 1em;
+  padding: 1em;
+  background: var(--secondary);
+  border: 1px solid var(--primary-low);
+  border-radius: var(--d-border-radius);
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:has(.pele-diagram__error) &__fullscreen {
+    display: none;
+  }
+
+  &__fullscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  html.no-touch &__fullscreen {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  html.no-touch &:hover &__fullscreen,
+  html.no-touch &__fullscreen:focus-visible {
+    opacity: 1;
+  }
+}
+
+.pele-fullscreen {
+  .d-modal__container {
+    --modal-max-width: 95vw;
+    width: 100%;
+    height: 100%;
+  }
+
+  .d-modal__body {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .pele-diagram,
+  .pele-diagram__canvas {
+    height: 100%;
+  }
+
+  .pele-diagram__canvas {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg.pele {
+    max-height: 100%;
+    width: auto;
+  }
+}

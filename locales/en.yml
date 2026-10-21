@@ -1,5 +1,9 @@
 en:
   theme_metadata:
-    description: "TODO"
-    settings:
-      example_setting: "A description of a setting."
+    description: "Renders Mermaid diagrams with Pele"
+  view_fullscreen: "View fullscreen"
+  diagram: "Diagram"
+  rendering_error: "Unable to render diagram: %{message}"
+  zoom_in: "Zoom in"
+  zoom_out: "Zoom out"
+  reset_zoom: "Reset zoom"
