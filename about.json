@@ -1,13 +1,15 @@
 {
-  "name": "TODO",
+  "name": "Discourse Pele",
   "component": true,
   "authors": "Discourse",
-  "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
-  "license_url": "TODO: Put your theme's LICENSE URL here",
-  "learn_more": "TODO",
+  "about_url": "https://github.com/discourse/discourse-pele-theme-component",
+  "license_url": "https://github.com/discourse/discourse-pele-theme-component/blob/main/LICENSE",
+  "learn_more": "https://github.com/obsidianmd/pele",
   "theme_version": "0.0.1",
-  "minimum_discourse_version": null,
+  "minimum_discourse_version": "2026.5.0",
   "maximum_discourse_version": null,
-  "assets": {},
+  "assets": {
+    "pele_js": "assets/pele-1.8.0.global.js"
+  },
   "modifiers": {}
 }
