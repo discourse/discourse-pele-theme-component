@@ -27,6 +27,7 @@
 
 .pele-wrapper {
   position: relative;
+  aspect-ratio: 16 / 9;
   margin-block: 1em;
   padding: 1em;
   background: var(--secondary);
@@ -35,6 +36,22 @@
 
   &:first-child {
     margin-top: 0;
+  }
+
+  .pele-diagram,
+  .pele-diagram__canvas {
+    height: 100%;
+  }
+
+  .pele-diagram__canvas {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  svg.pele {
+    flex-shrink: 0;
+    margin: auto;
   }
 
   &:has(.pele-diagram__error) &__fullscreen {
