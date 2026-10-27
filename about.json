@@ -9,7 +9,7 @@
   "minimum_discourse_version": "2026.5.0",
   "maximum_discourse_version": null,
   "assets": {
-    "pele_js": "assets/pele-1.8.0.global.js"
+    "pele_js": "assets/pele-1.10.0.global.js"
   },
   "modifiers": {}
 }
